@@ -4,7 +4,7 @@ import * as Markup from 'telegraf/markup';
 /**
  * /start command handler.
  *
- * @param {any} context Telegram context.
+ * @param {any} context Telegraf API context.
  */
 export const startHandler = (context) => {
     const keyboard = Markup

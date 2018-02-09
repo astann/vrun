@@ -7,9 +7,9 @@ import {sendMessageTo} from '../utils';
 /**
  * /join command handler.
  *
- * @param {any} telegram Telegram API.
+ * @param {any} context Telegraf API context.
  */
-export const joinHandler = (telegram) => (context) => {
+export const joinHandler = (context) => {
     let players = [...getState().players];
 
     if (!players.find((player) => player.id === context.from.id)) {
@@ -24,9 +24,8 @@ export const joinHandler = (telegram) => (context) => {
         sendMessageTo(
             players.map((player) => player.id.toString()),
             i18n.t('joinMessage', {name: context.from.first_name}),
-            telegram,
         );
-        whoHandler()(context);
+        whoHandler(context);
     } else {
         context.reply(i18n.t('joinError'));
     }

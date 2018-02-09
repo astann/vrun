@@ -4,8 +4,10 @@ import {getState} from '../state';
 
 /**
  * /who command handler.
+ *
+ * @param {any} context Telegraf API context.
  */
-export const whoHandler = () => (context) => {
+export const whoHandler = (context) => {
     const {players} = getState();
 
     const playerNames = players.map((player, index) => {
