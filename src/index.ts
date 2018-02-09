@@ -5,14 +5,14 @@ import {Application} from './classes/Application';
 import {I18_PARAMETERS} from './constants';
 
 /** Starting execution. */
-if (!process.env.TOKEN) {
-    console.log(i18n.t('noTokenError'));
-} else {
-    const application = new Application();
+i18n
+    .use(i18nextFSBackend)
+    .init(I18_PARAMETERS, () => {
+        if (!process.env.TOKEN) {
+            console.log(i18n.t('noTokenError'));
+        } else {
+            const application = new Application();
 
-    i18n
-        .use(i18nextFSBackend)
-        .init(I18_PARAMETERS, () => {
             application.start();
-        });
-}
+        }
+    });
