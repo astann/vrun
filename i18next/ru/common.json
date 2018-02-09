@@ -1,0 +1,16 @@
+{
+    "actions": {
+        "join": "/join чтобы присоединиться",
+        "who": "/who чтобы увидеть игроков"
+    },
+    "joinMessage": "{{name}} присоединился",
+    "joinError": "Вы уже присоединились!",
+    "noPlayers": "Никого нет",
+    "playerNames": "Игроки:\n{{playerNames}}",
+    "playerNameTemplate": "{{number}}. {{firstName}} {{lastName}}\n",
+    "system": {
+        "noTokenError": "Ошибка: В переменной среды TOKEN не указан токен Телеграм бота.",
+        "start": "Приложение запущено"
+    },
+    "welcomeMessage": "Добро пожаловать!\n/join чтобы присоединиться\n/who чтобы увидеть игроков"
+}
