@@ -1,16 +1,28 @@
 {
     "actions": {
-        "join": "/join чтобы присоединиться",
-        "who": "/who чтобы увидеть игроков"
+        "join": "/join чтобы присоединиться.",
+        "who": "/who чтобы увидеть игроков."
     },
-    "joinMessage": "{{name}} присоединился",
+    "joinMessage": "{{name}} присоединился.",
     "joinError": "Вы уже присоединились!",
-    "noPlayers": "Никого нет",
+    "noPlayers": "Никого нет.",
     "playerNames": "Игроки:\n{{playerNames}}",
     "playerNameTemplate": "{{number}}. {{firstName}} {{lastName}}\n",
+    "roundResults": "Результаты раунда:\n",
+    "startQuestion-1": "<b>{{question}}</b>\n\nУ вас {{count}} секунда чтобы ввести ответ.",
+    "startQuestion-3": "<b>{{question}}</b>\n\nУ вас {{count}} секунды чтобы ввести ответ.",
+    "startQuestion-5": "<b>{{question}}</b>\n\nУ вас {{count}} секунд чтобы ввести ответ.",
+    "startVoting-1": "У вас {{count}} секунда чтобы выбрать правильный ответ.",
+    "startVoting-3": "У вас {{count}} секунды чтобы выбрать правильный ответ.",
+    "startVoting-5": "У вас {{count}} секунд чтобы выбрать правильный ответ.",
     "system": {
         "noTokenError": "Ошибка: В переменной среды TOKEN не указан токен Телеграм бота.",
-        "start": "Приложение запущено"
+        "start": "Приложение запущено",
+        "getRequest": {
+            "error": "Ошибка get запроса:\n{{error}}",
+            "send": "Отправлен get запрос:\n{{url}}",
+            "success": "Получен ответ на запрос:\n{{url}}\nСтатус: {{status}}\nДанные: {{data}}"
+        }
     },
-    "welcomeMessage": "Добро пожаловать!\n/join чтобы присоединиться\n/who чтобы увидеть игроков"
+    "welcomeMessage": "Добро пожаловать!\n/join чтобы присоединиться\n/who чтобы увидеть игроков."
 }

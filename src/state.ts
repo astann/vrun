@@ -4,6 +4,7 @@ import {IApplicationState} from './models';
 
 const initialState: IApplicationState = {
     players: [],
+    questionsCount: 0,
 };
 
 const reducer = (state: IApplicationState = initialState, action) => {
@@ -12,6 +13,11 @@ const reducer = (state: IApplicationState = initialState, action) => {
             return {
                 ...state,
                 players: action.payload,
+            };
+        case 'UPDATE_QUESTIONS_COUNT':
+            return {
+                ...state,
+                questionsCount: action.payload.questionsCount,
             };
         case 'RESET_STATE':
             return initialState;

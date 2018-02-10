@@ -21,7 +21,9 @@ export interface IPlayer {
  * Global apllication state.
  *
  * @prop {IPlayer[]} players List of players.
+ * @prop {number} questionsCount Number of available questions.
  */
 export interface IApplicationState {
     players: IPlayer[];
+    questionsCount: number;
 }
